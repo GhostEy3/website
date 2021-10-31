@@ -29,7 +29,7 @@ if ($name == "") {
     $msg['code'] = FALSE;
 } else {
     $to = 'saidobid@rasulson.com';
-    $subject = 'Papr Contact Query';
+    $subject = 'Website';
     $_message = '<html><head></head><body>';
     $_message .= '<p>Name: ' . $name . '</p>';
     $_message .= '<p>Message: ' . $phone . '</p>';
@@ -39,7 +39,7 @@ if ($name == "") {
 
     $headers = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-    $headers .= 'From:  Papr <saidobid@rasulson.com>' . "\r\n";
+    $headers .= 'From:  Website-contact <saidobid@rasulson.com>' . "\r\n";
     $headers .= 'cc: saidobid@rasulson.com' . "\r\n";
     $headers .= 'bcc: saidobid@rasulson.com' . "\r\n";
     mail($to, $subject, $_message, $headers, '-f saidobid@rasulson.com');
